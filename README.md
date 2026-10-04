@@ -30,6 +30,9 @@ bun start:go     # Expo Go — works while there are no custom native modules
 bun start        # dev client — needs a dev build installed on the device/simulator
 ```
 
+EAS project: [`@amicus-timisoara/amicus`](https://expo.dev/accounts/amicus-timisoara/projects/amicus)
+(org `amicus-timisoara`; `owner` + `extra.eas.projectId` in `app.json`).
+
 Dev build: `eas build --profile development --platform android|ios`
 (`development-simulator` for the iOS simulator), or locally with `bun run android`
 (Android SDK) / `bun run ios` (Mac + Xcode).
@@ -50,6 +53,5 @@ bundle`) also bundles the JS for iOS and Android, and is required to merge into 
 
 - **Bundle ID / package** `ro.amicustimisoara.app` is a placeholder — it is permanent
   once an app is published, so pick it for the real domain first.
-- **EAS project:** run `eas init` under whichever Expo account/org should own the app.
 - **Google sign-in:** native Google Sign-In, using the existing web OAuth client as the
   `serverClientId`, should yield ID tokens amicus-api already accepts — verify when added.
