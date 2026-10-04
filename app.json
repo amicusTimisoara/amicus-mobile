@@ -39,6 +39,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "owner": "amicus-timisoara",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "8b9dbaed-5d30-435f-aa80-39191ac155ed"
+      }
     }
   }
 }
